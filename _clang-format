@@ -1,0 +1,244 @@
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: false
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: false
+AlignConsecutiveMacros: Consecutive
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseArrows: true
+  AlignCaseColons: true
+AlignConsecutiveTableGenBreakingDAGArgColons: Consecutive
+AlignConsecutiveTableGenCondOperatorColons: Consecutive
+AlignConsecutiveTableGenDefinitionColons: Consecutive
+AlignEscapedNewlines: LeftWithLastLine
+BreakBeforeBinaryOperators: All
+AlignOperands: AlignAfterOperator
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+MaxEmptyLinesToKeep: 2
+AllowAllArgumentsOnNextLine: true
+BinPackArguments: true
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackParameters: BinPack
+AllowBreakBeforeNoexceptSpecifier: Always
+# AllowBreakBeforeQtProperty: true
+AllowShortBlocksOnASingleLine: Never
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: OnlyFirstIf
+AllowShortLambdasOnASingleLine: Inline
+AllowShortLoopsOnASingleLine: true
+AllowShortNamespacesOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: true
+AttributeMacros: [__capability, __out, __output, __unused]
+BinPackLongBracedList: true
+BitFieldColonSpacing: None
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: true
+  AfterControlStatement: MultiLine
+  AfterEnum: true
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyRecord: false
+BracedInitializerIndentWidth: -1
+ContinuationIndentWidth: 2
+BreakAdjacentStringLiterals: true
+BreakAfterAttributes: Always
+BreakAfterJavaFieldAnnotations: false
+# Cpp11BracedListStyle: FunctionCall
+Cpp11BracedListStyle: true
+# BreakAfterOpenBracketLoop: false
+# BreakAfterOpenBracketSwitch: false
+BreakAfterReturnType: ExceptShortType
+BreakArrays: false
+# BreakBeforeCloseBracketLoop: false
+# BreakBeforeCloseBracketSwitch: false
+BreakBeforeConceptDeclarations: Allowed
+BreakBeforeInlineASMColon: OnlyMultiline
+BreakBeforeTemplateCloser: false
+BreakBeforeTernaryOperators: true
+BreakBinaryOperations: RespectPrecedence
+BreakConstructorInitializers: BeforeComma
+BreakFunctionDefinitionParameters: false
+BreakInheritanceList: BeforeComma
+BreakStringLiterals: true
+BreakTemplateDeclarations: MultiLine
+ColumnLimit: 120
+CommentPragmas: '^ IWYU pragma:'
+CompactNamespaces: true
+ConstructorInitializerIndentWidth: 2
+DerivePointerAlignment: false
+PointerAlignment: Right
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: LogicalBlock
+EnumTrailingComma: Leave
+FixNamespaceComments: true
+ShortNamespaceLines: 0
+ForEachMacros: [foreach, FOREACH, RANGES_FOR, Q_FOREACH, BOOST_FOREACH]
+IfMacros: [IF, KJ_IF_MAYBE]
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: 'windows\.h>$'
+    Priority: 6
+    SortPriority: 1
+  - Regex: 'Python\.h>$'
+    Priority: -1
+  - Regex: 'winsock2\.h>$'
+    Priority: 6
+    SortPriority: 0
+  - Regex: 'GL/glew\.h>$'
+    Priority: 3
+    SortPriority: 1
+  - Regex: 'GL/gl\.h>$'
+    Priority: 3
+    SortPriority: 2
+  - Regex: 'GL/glu\.h>$'
+    Priority: 3
+  - Regex: '(commdlg|shellapi)\.h>$'
+    Priority: 6
+  - Regex: 'afxwin\.h>$'
+    Priority: 6
+    SortPriority: 7
+  - Regex: '(cuda|cuda_runtime)\.h>$'
+    Priority: 2
+  - Regex: 'QApplication>$'
+    Priority: 4
+    SortPriority: 1
+  - Regex: 'QMainWindow>$'
+    Priority: 4
+    SortPriority: 2
+  - Regex: 'QWidget>$'
+    Priority: 4
+    SortPriority: 3
+  - Regex: 'sys/types\.h>$'
+    Priority: 1
+    SortPriority: 0
+  - Regex: '(sys/|(unistd|fcntl)\.h>$)'
+    Priority: 1
+  - Regex: '^<'
+    Priority: 5
+  - Regex: '(X11/Xlib|jpeglib)\.h>$'
+    Priority: 5
+    SortPriority: 6
+  - Regex: '^"'
+    Priority: 7
+IncludeIsMainRegex: '(_test|Test)?$'
+IncludeIsMainSourceRegex: '((_impl|Impl)\.hpp)$'
+IndentAccessModifiers: false
+IndentCaseBlocks: false
+IndentCaseLabels: false
+IndentExportBlock: true
+IndentExternBlock: NoIndent
+IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+RequiresClausePosition: WithPreceding
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+InsertBraces: false
+InsertNewlineAtEOF: true
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: false
+  AtStartOfFile: false
+LambdaBodyIndentation: OuterScope
+MacroBlockBegin: 'then|THEN$'
+MacroBlockEnd: '^end|END'
+Macros: []
+NamespaceIndentation: Inner
+NamespaceMacros: [testsuite, TESTSUITE]
+OneLineFormatOffRegex: '//-format'
+PPIndentWidth: -1
+PackConstructorInitializers: BinPack
+ReferenceAlignment: Pointer
+ReflowComments: IndentOnly
+RemoveEmptyLinesInUnwrappedLines: true
+RequiresExpressionIndentation: OuterScope
+SeparateDefinitionBlocks: Always
+SkipMacroDefinitionBody: false
+SortIncludes:
+  Enabled: true
+  IgnoreCase: false
+  # IgnoreExtension: true
+SortUsingDeclarations: LexicographicNumeric
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterOperatorKeyword: true
+SpaceAfterTemplateKeyword: true
+SpaceAroundPointerQualifiers: After
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeJsonColon: true
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterForeachMacros: false
+  AfterFunctionDeclarationName: true
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: false
+  AfterNot: true
+  AfterOverloadedOperator: false
+  AfterPlacementOperator: true
+  AfterRequiresInClause: true
+  AfterRequiresInExpression: false
+  BeforeNonEmptyParentheses: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: true
+SpaceInEmptyBlock: true
+# SpaceInEmptyBraces: Always
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: false
+SpacesInLineCommentPrefix:
+  Minimum: 0
+  Maximum: 1
+SpacesInParens: Custom
+SpacesInParensOptions:
+  ExceptDoubleParentheses: true
+  InConditionalStatements: false
+  InCStyleCasts: true
+  InEmptyParentheses: false
+  Other: false
+SpacesInSquareBrackets: false
+Standard: Latest
+StatementAttributeLikeMacros: [emit, Q_EMIT]
+StatementMacros: [Q_UNUSED, QT_REQUIRE_VERSION]
+TabWidth: 8
+UseTab: Never
+TableGenBreakInsideDAGArg: DontBreak
+TemplateNames: []
+TypeNames: []
+TypenameMacros: [STACK_OF, LIST, LIST_ENTRY]
+VariableTemplates: []
+VerilogBreakBetweenInstancePorts: true
+WhitespaceSensitiveMacros: [BOOST_PP_STRINGIZE, CF_SWIFT_NAME, NS_SWIFT_NAME, PP_STRINGIZE, STRINGIZE]
+WrapNamespaceBodyWithEmptyLines: Leave
