@@ -27,7 +27,7 @@ AlignConsecutiveTableGenBreakingDAGArgColons: Consecutive
 AlignConsecutiveTableGenCondOperatorColons: Consecutive
 AlignConsecutiveTableGenDefinitionColons: Consecutive
 AlignEscapedNewlines: LeftWithLastLine
-BreakBeforeBinaryOperators: All
+BreakBeforeBinaryOperators: NonAssignment
 AlignOperands: AlignAfterOperator
 AlignTrailingComments:
   Kind: Always
